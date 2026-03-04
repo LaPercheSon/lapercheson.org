@@ -1,0 +1,137 @@
+#imgGalleryDiv01 {background-image: url("../photos/imgGallery01.jpg");}
+#imgGalleryDiv02 {background-image: url("../photos/imgGallery02.jpg");}
+#imgGalleryDiv03 {background-image: url("../photos/imgGallery03.jpg");}
+#imgGalleryDiv04 {background-image: url("../photos/imgGallery04.jpg");}
+#imgGalleryDiv05 {background-image: url("../photos/imgGallery05.jpg");}
+#imgGalleryDiv06 {background-image: url("../photos/imgGallery06.jpg");}
+#imgGalleryDiv07 {background-image: url("../photos/imgGallery07.jpg");}
+#imgGalleryDiv08 {background-image: url("../photos/imgGallery08.jpg");}
+#imgGalleryDiv09 {background-image: url("../photos/imgGallery09.jpg");}
+#imgGalleryDiv10 {background-image: url("../photos/imgGallery10.jpg");}
+#imgGalleryDiv11 {background-image: url("../photos/imgGallery11.jpg");}
+#imgGalleryDiv12 {background-image: url("../photos/imgGallery12.jpg");}
+#imgGalleryDiv13 {background-image: url("../photos/imgGallery13.jpg");}
+#imgGalleryDiv14 {background-image: url("../photos/imgGallery14.jpg");}
+#imgGalleryDiv15 {background-image: url("../photos/imgGallery15.jpg");}
+#imgGalleryDiv16 {background-image: url("../photos/imgGallery16.jpg");}
+#imgGalleryDiv17 {background-image: url("../photos/imgGallery17.jpg");}
+#imgGalleryDiv18 {background-image: url("../photos/imgGallery18.jpg");}
+#imgGalleryDiv19 {background-image: url("../photos/imgGallery19.jpg");}
+#imgGalleryDiv20 {background-image: url("../photos/imgGallery20.jpg");}
+#imgGalleryDiv21 {background-image: url("../photos/imgGallery21.jpg");}
+#imgGalleryDiv22 {background-image: url("../photos/imgGallery22.jpg");}
+#imgGalleryDiv23 {background-image: url("../photos/imgGallery23.jpg");}
+#imgGalleryDiv24 {background-image: url("../photos/imgGallery24.jpg");}
+
+.imgGalleryProperties {
+    /* height: 100%; */
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+
+.imageGallery {
+    list-style: none;
+    padding: 1vw;
+    box-sizing: content-box;
+    background-color: var(--block-bg);
+    border-radius: 10px;
+    margin: auto;
+
+    width: 70vw;
+    max-height: calc(90vh - 48px);
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.gallerImage {
+    width: 21vw;
+    height: 21vw;
+
+    position: relative;
+
+    overflow: hidden;
+    margin: auto;
+    cursor: pointer;
+
+    border-radius: 1vw;
+    transition: all .3s;
+
+    margin-bottom: 2vw;
+}
+
+.imageToggle:not(:checked)+.gallerImage:hover {
+    transform: scale(1.05);
+}
+
+.imageToggle:not(:checked)+.gallerImage:active {
+    transform: scale(.95);
+}
+
+.gallerImage div {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.4s;
+}
+
+.imageToggle {
+    display: none;
+}
+
+.imageToggle:checked+.gallerImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--block-bg);
+    z-index: 5000;
+}
+.imageToggle:checked+.gallerImage div {
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-size:contain;
+}
+
+@media all and (max-width : 1260px) {
+    .imageGallery {
+        width: 95vw;
+    }
+
+    .gallerImage {
+        width: 27vw;
+        height: 27vw;
+    }
+}
+
+@media all and (max-width : 600px) {
+
+    .gallerImage {
+        width: 43vw;
+        height: 43vw;
+    }
+}
+

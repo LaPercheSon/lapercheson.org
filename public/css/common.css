@@ -1,0 +1,147 @@
+/* ----- Main Content ----- */
+
+body,
+html {
+    scroll-snap-type: y mandatory;
+    background: var(--body-bg);
+    color: var(--body-color);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (hover: none) {
+    body,
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Titles & text */
+
+h1 {
+    transition: all 1s;
+    margin: 0;
+    font-size: 500%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1:hover {
+    font-size: 550%;
+}
+
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.h3like {
+    font-size: large;
+    font-weight: bold;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h6 {
+    margin: 0;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.unselectable {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+
+.postscriptum {
+    font-style: italic;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+
+.titlePage {
+    width: 50%;
+    height: 28px;
+}
+
+.boldi {
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media all and (max-width : 500px) {
+    .titlePage {
+        width: 240px;
+    }
+}
+
+@media all and (max-height : 900px) {
+    h1 {
+        font-size: 200%;
+    }
+}
+
+/* ----------- SCROLLBAR ----------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: var(--scroll-bg);
+}
+
+::-webkit-scrollbar:hover {
+    width: 14px;
+    background: var(--scroll-bg);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: var(--scroll-bg);
+    border: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+    background-color: var(--scroll-thumb-bg);
+    transition: all 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    width: 14px;
+    border-radius: 4px;
+    background-color: var(--scroll-thumb-hover);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--scroll-thumb-active);
+}

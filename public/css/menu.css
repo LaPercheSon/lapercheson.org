@@ -1,0 +1,158 @@
+/* ----- Navigation Menu ----- */
+
+nav {
+    width: 69px;
+    background-color: var(--nav-bg);
+    transition: all 0.2s;
+    position: fixed;
+    z-index: 4269;
+    max-width: 30%;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+}
+
+
+nav ul a {
+    text-decoration: none;
+    color: var(--nav-color);
+    transition: all 0.3s;
+    display: flex;
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-size: 0% 100%;
+    background-image: linear-gradient(var(--nav-color), var(--nav-color));
+}
+
+nav ul a:hover {
+    color: var(--nav-bg);
+    background-size: 100% 100% !important;
+    border-bottom-right-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul a li {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 40px;
+    padding: 30px;
+    left: -50px;
+    transition: all 0.3s;
+    display: none;
+    opacity: 0;
+}
+
+nav:hover .textMenu {
+    display: block;
+    opacity: 1;
+}
+
+
+nav ul a li:hover {
+    background-size: 100% 100%;
+}
+
+nav ul {
+    opacity: 1;
+    transition: all 0.3s;
+    padding: 0px;
+}
+
+nav ul a img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    transition: all 0.2s;
+}
+
+@media all and (max-width : 1280px) {
+    nav {
+        max-width: 50%;
+    }
+
+}
+
+@media all and (max-width : 600px) {
+    nav {
+        max-width: 90%;
+    }
+
+}
+
+/* Toggle menu */
+
+#menuToggleButton {
+    position: fixed;
+    z-index: 4800;
+
+    top: 0px;
+    left: 0px;
+
+    width: 69px;
+    height: 69px;
+
+    background-color: var(--nav-bg);
+}
+
+#menuToggleButton div {
+    margin: 14px;
+    width: 41px;
+    height: 41px;
+    background-image: url("../images/menu.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .3s;
+}
+
+.menuToggle {
+    display: none;
+}
+
+/* #menuIcon:not(:checked) {
+    display: none;
+}
+
+#menuIcon:checked {
+    position: fixed;
+    right: 0;
+    display: block;
+} */
+
+nav:hover {
+    width: 100%;
+}
+
+@media (hover: hover) {
+    
+    #menuToggleButton {
+        display: none;
+    }
+}
+  
+@media (hover: none) {
+    nav {
+        top: 69px;
+    }
+    #menuIcon:not(:checked)~#menuToggleButton {
+        border-bottom-right-radius: 10px;
+    }
+    #menuIcon:checked~#menuToggleButton div {
+        background-image: url("../images/plus.svg");
+        transform: rotate(45deg);
+    }
+
+    #menuIcon:not(:checked)~nav {
+        transform: translateY(-200vh);
+    }
+    #menuIcon:checked~nav {
+        transform: translateY(0px);
+    }
+    
+}

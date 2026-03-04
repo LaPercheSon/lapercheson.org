@@ -1,0 +1,64 @@
+/* Dark mode */
+:root {
+    --body-bg: #111111;
+    --body-color: #eeeeee;
+    --nav-bg: #222222;
+    --nav-color: #dddddd;
+    --scroll-bg: rgba(0, 0, 0, 0);
+    --scroll-thumb-bg: #999999;
+    --scroll-thumb-hover: #bbbbbb;
+    --scroll-thumb-active: #777777;
+    --block-bg: rgba(0, 0, 0, 0.69);
+    --block-bg-f: rgba(0, 0, 0, 1);
+    --discordfonts: Ginto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --button-bg: #444444;
+    --button-bg-hover: #555555;
+    --winSize: 1080px;
+    --subtitle: #aaaaaa;
+    --otherblenditem: rgba(75, 75, 75, 0.4);
+    --otherblenditemhover: rgba(0, 0, 0, 0.8);
+    --contactbg: #444444;
+    --contactlinkbg: #666666;
+    --contactlinkbghover: #6e6e6e;
+}
+
+.invertOk {
+    filter: invert(1);
+}
+
+nav ul a:hover>.invertOk {
+    filter: invert(0);
+}
+
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --body-bg: #eeeeee;
+        --body-color: #111111;
+        --nav-bg: #dddddd;
+        --nav-color: #222222;
+        --scroll-bg: rgba(255, 255, 255, 0);
+        --scroll-thumb-bg: #999999;
+        --scroll-thumb-hover: #777777;
+        --scroll-thumb-active: #bbbbbb;
+        --block-bg: rgba(255, 255, 255, 0.69);
+        --block-bg-f: rgba(255, 255, 255, 1);
+        --button-bg: #bbbbbb;
+        --button-bg-hover: #aaaaaa;
+        --subtitle: #555555;
+        --otherblenditem: rgba(180, 180, 180, 0.4);
+        --otherblenditemhover: rgba(255, 255, 255, 0.7);
+        --contactbg: #bbbbbb;
+        --contactlinkbg: #999999;
+        --contactlinkbghover: #909090;
+    }
+
+    .invertOk {
+        filter: invert(0);
+    }
+
+    nav ul a:hover>.invertOk {
+        filter: invert(1);
+    }
+}
