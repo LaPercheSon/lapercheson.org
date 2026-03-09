@@ -1,12 +1,6 @@
 <?php
 
-function getStrList(string $pre, int $count, string $post = ".jpg"):array {
-    $arr = [];
-    for ($i=0; $i < $count; $i++) { 
-        array_push($arr, $pre . ($i+1) . $post);
-    }
-    return $arr;
-}
+include_once("utils.php");
 
 $_CREA_EXAMPLE = [
     [
