@@ -1,37 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="utf-8">
-    <title>La Perche Son</title>
-    <link href="public/css/themes.css" rel="stylesheet">
-    <link href="public/css/common.css" rel="stylesheet">
-    <link href="public/css/menu.css" rel="stylesheet">
-    <link href="public/css/styles.css" rel="stylesheet">
-    <link href="public/css/images.css" rel="stylesheet">
-
-    <meta name="author" content="La Perche Son">
-    <meta name="description" content="La Perche Son est un collectif de création audiovisuelle.">
-
-    <link rel="icon" type="image/x-icon" href="public/images/favicon.png">
-
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:title" content="La Perche Son">
-    <meta property="og:description" content="La Perche Son est un collectif de création audiovisuelle.">
-
-    <meta property="og:image" content="https://lapercheson.org/public/images/favicon.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:alt" content="Logo de La Perche Son">
-
-    <meta property="og:url" content="https://lapercheson.org" />
-    <meta data-react-helmet="true" name="theme-color" content="#f3cb5c" />
-    <meta property="og:site_name" content="lapercheson.org">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-</head>
+<?php
+include("include/head.php");
+?>
 
 <body>
 
@@ -202,104 +171,7 @@
         <div class="titlePage blockPage" id="titleContact">
             <h2>Photos de tournage</h2>
         </div>
-        <ul class="imageGallery">
-            <input type="checkbox" id="imgGallery01" class="imageToggle">
-            <label for="imgGallery01" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv01"></div>
-            </label>
-            <input type="checkbox" id="imgGallery02" class="imageToggle">
-            <label for="imgGallery02" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv02"></div>
-            </label>
-            <input type="checkbox" id="imgGallery03" class="imageToggle">
-            <label for="imgGallery03" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv03"></div>
-            </label>
-            <input type="checkbox" id="imgGallery04" class="imageToggle">
-            <label for="imgGallery04" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv04"></div>
-            </label>
-            <input type="checkbox" id="imgGallery05" class="imageToggle">
-            <label for="imgGallery05" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv05"></div>
-            </label>
-            <input type="checkbox" id="imgGallery06" class="imageToggle">
-            <label for="imgGallery06" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv06"></div>
-            </label>
-            <input type="checkbox" id="imgGallery07" class="imageToggle">
-            <label for="imgGallery07" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv07"></div>
-            </label>
-            <input type="checkbox" id="imgGallery08" class="imageToggle">
-            <label for="imgGallery08" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv08"></div>
-            </label>
-            <input type="checkbox" id="imgGallery09" class="imageToggle">
-            <label for="imgGallery09" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv09"></div>
-            </label>
-            <input type="checkbox" id="imgGallery10" class="imageToggle">
-            <label for="imgGallery10" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv10"></div>
-            </label>
-            <input type="checkbox" id="imgGallery11" class="imageToggle">
-            <label for="imgGallery11" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv11"></div>
-            </label>
-            <input type="checkbox" id="imgGallery12" class="imageToggle">
-            <label for="imgGallery12" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv12"></div>
-            </label>
-            <input type="checkbox" id="imgGallery13" class="imageToggle">
-            <label for="imgGallery13" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv13"></div>
-            </label>
-            <input type="checkbox" id="imgGallery14" class="imageToggle">
-            <label for="imgGallery14" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv14"></div>
-            </label>
-            <input type="checkbox" id="imgGallery15" class="imageToggle">
-            <label for="imgGallery15" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv15"></div>
-            </label>
-            <input type="checkbox" id="imgGallery16" class="imageToggle">
-            <label for="imgGallery16" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv16"></div>
-            </label>
-            <input type="checkbox" id="imgGallery17" class="imageToggle">
-            <label for="imgGallery17" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv17"></div>
-            </label>
-            <input type="checkbox" id="imgGallery18" class="imageToggle">
-            <label for="imgGallery18" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv18"></div>
-            </label>
-            <input type="checkbox" id="imgGallery19" class="imageToggle">
-            <label for="imgGallery19" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv19"></div>
-            </label>
-            <input type="checkbox" id="imgGallery20" class="imageToggle">
-            <label for="imgGallery20" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv20"></div>
-            </label>
-            <input type="checkbox" id="imgGallery21" class="imageToggle">
-            <label for="imgGallery21" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv21"></div>
-            </label>
-            <input type="checkbox" id="imgGallery22" class="imageToggle">
-            <label for="imgGallery22" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv22"></div>
-            </label>
-            <input type="checkbox" id="imgGallery23" class="imageToggle">
-            <label for="imgGallery23" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv23"></div>
-            </label>
-            <input type="checkbox" id="imgGallery24" class="imageToggle">
-            <label for="imgGallery24" class="gallerImage">
-                <div class="imgGalleryProperties" id="imgGalleryDiv24"></div>
-            </label>
-        </ul>
+        <?php include("include/galery.php") ?>
 
     </section>
 
