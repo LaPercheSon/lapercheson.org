@@ -32,7 +32,7 @@ function printOtherProjectCSS($idx, $images): void
 $_PROJECTS = [
     ["Interception", "Premier projet de long métrage de La Perche Son.\n(soon)", "#", getStrList("images/projectsimages/interception")],
 
-    ["Trailer Le Royaume des Rêves", "Teaser réalisé pour le Gala de la 59ème promotion de l'ENIT", "#", getStrList("images/projectsimages/cine2_")], #FIXME: 
+    ["Trailer Au Royaume des Rêves", "Tournage du trailer pour le Gala de la 59ème promotion de l'ENIT", "https://www.youtube.com/watch?v=gv8eOFS0kCI", getStrList("images/projectsimages/cine2_")], #FIXME: 
 
     ["Tombé sur un OS", "Premier court métrage de La Perche Son\nPetit film d'animation réalisé avec Blender et Resolve", "https://www.youtube.com/watch?v=j5r4sCqiFRE", getStrList("images/projectsimages/tombesurunos")],
 

@@ -33,5 +33,8 @@
     <meta name="viewport"
         content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-    <?php if (isset($_PROJECTS)) printAllOtherProjectsCSS($_PROJECTS); ?>
+    <?php
+    if (isset($_PROJECTS)) printAllOtherProjectsCSS($_PROJECTS);
+    if (isset($_SECTIONS)) printSectionsCSS($_SECTIONS);
+    ?>
 </head>
