@@ -3,15 +3,15 @@
 $_SECTIONS = [
     // [["id","SHORT","Long title", "description", "path/to/icon.svg"], ["/* normal css properties */", "/* hover css properties */", "/* aside css properties */", "/* aside hover css properties */", minHeightVisible(px)]],
 
-    [["top", "Accueil", "La Perche Son", "Qu'est-ce que La Perche Son ?", "images/icon/logo.png"], ["", 0]],
+    [["top", "Accueil", "La Perche Son", "Qu'est-ce que La Perche Son ?", "images/icons/logo.png"], ["", 0]],
 
-    [["actus", "Actus", "Interception", "Activités actuelles de l'association", "images/icon/blackholelogo.png"], ["", 0]],
+    [["actus", "Actus", "Interception", "Activités actuelles de l'association", "images/icons/blackholelogo.png"], ["", 0]],
 
-    [["projects", "Projets", "Nos créations", "Projets réalisés par nous où auxquels nous avons participé", "images/icon/camera.svg"], ["", 0]],
+    [["projects", "Projets", "Nos créations", "Projets réalisés par nous où auxquels nous avons participé", "images/icons/camera.svg"], ["", 0]],
 
-    [["photos", "Photos", "Photographies", "Photos de nos tournages ou de nos réalisations", "images/icon/photo.svg"], ["", 0]],
+    [["photos", "Photos", "Photographies", "Photos de nos tournages ou de nos réalisations", "images/icons/photo.svg"], ["", 0]],
 
-    [["contact", "Contact", "Nous contacter", "Comment nous contacter ?", "images/icon/mail.svg"], ["", 0]],
+    [["contact", "Contact", "Nous contacter", "Comment nous contacter ?", "images/icons/mail.svg"], ["", 0]],
 ];
 
 $_CURRENT_SECTION = 0;
@@ -43,7 +43,7 @@ function printNav($sections): void
     foreach ($sections as $_k => $sections) {
 ?>
         <a href="#<?php echo $sections[0][0] ?>">
-            <img src="public/images/logo.png" width="40px" height="40px" class="imgMenu">
+            <img src="<?php echo $sections[0][4] ?>" width="40px" height="40px" class="imgMenu">
             <li class="textMenu"><?php echo $sections[0][1] ?></li>
         </a>
     <?php

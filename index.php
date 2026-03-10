@@ -12,15 +12,17 @@ include_once("include/head.php");
 
         <?php
         newSection(); // home
-        
+
         newSection(); // actus
 
         newSection(); // projects
+        printAllOtherProjectsHTML($_PROJECTS);
 
         newSection(); // photos
         include("include/galery.php");
 
-        newSection(); // contacts
+        newSection(); // contact
+        include("include/contact.php");
 
         newSection($end=true);
         ?>
