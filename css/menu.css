@@ -60,3 +60,11 @@ nav ul a img {
     margin-left: 10px;
     transition: all 0.2s;
 }
+
+.aside_element {
+    display: none;
+}
+
+.current_aside {
+    display: block;
+}

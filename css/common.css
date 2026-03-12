@@ -102,6 +102,10 @@ img {
     font-style: italic;
 }
 
+.main_section {
+    min-height: 100vh;
+}
+
 @media all and (max-width : 500px) {
     .titlePage {
         width: 240px;

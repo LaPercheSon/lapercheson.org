@@ -67,9 +67,9 @@ function creas2html($creas, $prefix, $type, int $cols_or_size = 300): void
 {
     echo "<input class='lb-toggle' type='radio' name='lightbox' id='img_" . $prefix . "_none' checked style='position:absolute;left:-9999px;'>";
     if ($cols_or_size > 20)
-        echo "<section class='galery' style='column-width: {$cols_or_size}px; column-count: auto;'>";
+        echo "<figure class='galery' style='column-width: {$cols_or_size}px; column-count: auto;'>";
     else
-        echo "<section class='galery' style='column-count: {$cols_or_size};'>";
+        echo "<figure class='galery' style='column-count: {$cols_or_size};'>";
     foreach ($creas as $key => $value) {
         if (isset($value[3]) && $value[3] == "HIDDEN") echo "<!--";
         echo "<article class='creation'>";
@@ -78,13 +78,13 @@ function creas2html($creas, $prefix, $type, int $cols_or_size = 300): void
         echo "</article>";
         if (isset($value[3]) && $value[3] == "HIDDEN") echo "-->";
     }
-    echo "</section>";
+    echo "</figure>";
 }
 
 function photocrea($pre, $batch, $crea): void
 {
 ?>
-    <figure class="minigallery">
+    <div class="minigallery">
         <?php
         foreach ($crea[0] as $idx => $image) {
             $id = 'img_' . $pre . '_s' . $batch . '_' . $idx;
@@ -100,23 +100,23 @@ function photocrea($pre, $batch, $crea): void
             echo "  <div class='lightbox-inner'>";
             echo "    <label class='lb-close' for='img_" . $pre . "_none' aria-label='Close'>&times;</label>";
             echo "    <img class='lb-img' src='{$src}' alt=''>";
-            echo "    <div class='lb-caption'>" . htmlspecialchars($crea[1], ENT_QUOTES) . "</div>";
+            echo "    <figcaption class='lb-caption'>" . htmlspecialchars($crea[1], ENT_QUOTES) . "</figcaption>";
             echo "  </div>";
             // background clickable area
             echo "  <label class='lb-backdrop' for='img_" . $pre . "_none'></label>";
             echo "</div>\n";
         }
         ?>
-    </figure>
+    </div>
 
-    <div class="creationDescription">
+    <figcaption class="creationDescription">
         <p><?php
             echo $crea[1];
             foreach ($crea[2] as $_key => $link) {
                 echo " <a target=\"_blank\" href=\"" . htmlspecialchars($link[1], ENT_QUOTES) . "\" class=\"clink\">&lt;" . $link[0] . "&gt;</a>";
             }
             ?></p>
-    </div>
+    </figcaption>
 <?php
 }
 
