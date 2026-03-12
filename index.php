@@ -40,6 +40,7 @@ include_once("include/head.php");
         </div>
     </main>
     <?php printAside($_SECTIONS) ?>
+    <script src="scripts/side.js"></script>
 </body>
 
 </html>

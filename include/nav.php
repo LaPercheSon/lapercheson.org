@@ -57,22 +57,15 @@ function printAside($sections): void
     echo "<aside><ul>";
     foreach ($sections as $_k => $sections) {
     ?>
-        <a href="#<?php echo $sections[0][0] ?>">
-            <li class="textMenu"><?php echo $sections[0][2] ?></li>
-        </a>
+        <li class="aside_element" id="aside_<?php echo $sections[0][0] ?>"><?php echo $sections[0][2] ?></li>
 <?php
     }
     echo "</ul></aside>";
 }
 
-
-// function printSectionName($section_idx) : void {
-
-// }
-
 function printSection(string $id, string $title = ""): void
 {
-    echo "<!-- " . strtoupper($id) . " SECTION -->\n<section id='$id'>";
+    echo "<!-- " . strtoupper($id) . " SECTION -->\n<section class='main_section' id='$id'>";
     if (strlen($title) > 0)
         echo "<div class='titlePage blockPage' id='title_$id'>
                 <h2>$title</h2>
