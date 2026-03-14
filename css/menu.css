@@ -29,7 +29,7 @@ nav ul a {
 }
 
 nav ul a li {
-    background: linear-gradient(90deg, var(--yellow-t1), var(--yellow-t3), var(--yellow-t1)), radial-gradient(closest-side, var(--yellow-t1) , var(--yellow-t3) );
+    background: linear-gradient(90deg, var(--yellow-t1), var(--yellow-t3), var(--yellow-t1)), radial-gradient(closest-side, var(--yellow-t1), var(--yellow-t3));
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,14 +37,15 @@ nav ul a li {
 }
 
 nav ul a li:hover {
-    background: linear-gradient(90deg, var(--yellow-t0), var(--yellow-t2), var(--yellow-t0)), radial-gradient(closest-side, var(--yellow-t0) , var(--yellow-t2) );
+    background: linear-gradient(90deg, var(--yellow-t0), var(--yellow-t2), var(--yellow-t0)), radial-gradient(closest-side, var(--yellow-t0), var(--yellow-t2));
 }
 
-nav:active, nav.press  {
+nav:active,
+nav.press {
     --yellow: var(--yellow-press);
-    --always-0:var(--pressed-always-0);
-    --always-black:var(--pressed-always-black);
-    --almost-black:var(--pressed-almost-black);
+    --always-0: var(--pressed-always-0);
+    --always-black: var(--pressed-always-black);
+    --almost-black: var(--pressed-almost-black);
     --yellow-t0: #0000;
     --yellow-t1: #0000;
     --yellow-t2: #0000;
@@ -62,13 +63,16 @@ nav ul a li {
     transition: all 0.3s;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     color: var(--almost-black);
+    container-type: size;
 }
 
-nav ul a li span {
+nav ul a li .nav_menu_name {
     height: 100%;
-    font-size: min(4.5vw, calc(20vh / 4)); /* 7chars max ! */
+    width: min(90cqw, calc(20vh / 4));
+    font-size: min(90cqw, calc(20vh / 4));
+    /* 7chars max ! */
     writing-mode: sideways-lr;
 }
 
@@ -85,20 +89,47 @@ nav ul a img {
     transition: all 0.2s;
 }
 
+.nav_overline {
+    height: 100%;
+    width: 0%;
+    background-color: #0000;
+    transition: all 0.2s;
+}
+
 .current_nav {
-    text-decoration: overline var(--always-black);
     color: var(--always-black);
 }
 
+.current_nav .nav_overline {
+    background-color: var(--always-black);
+    width: 10%;
+}
+
 nav.press .current_nav {
-    text-decoration: none;
     color: var(--almost-black);
 }
 
-.nav_link_press {
-    text-decoration: overline var(--always-0) !important;
+nav.press .nav_overline {
+    width: 0%;
+    background-color: #0000;
+}
+
+.nav_link_press .nav_menu_name  {
     color: var(--always-0) !important;
 }
+
+.nav_link_press .nav_overline {
+    width: 10% !important;
+    background-color: var(--always-0) !important;
+}
+
+/* @media screen and ((max-width : 900px) or (orientation:portrait)) {
+    nav ul a li .nav_menu_name {
+        font-size: min(9vw, calc(20vh / 4));
+    }
+} */
+
+/* ----------------- ASIDE ----------------- */
 
 aside {
     height: 100%;
@@ -116,16 +147,6 @@ aside ul {
     padding: 0px;
 }
 
-aside li, nav li span {
-    font-weight: 900;
-    /* padding: 0.5vw; */
-    list-style: none;
-    text-transform: uppercase;
-    text-align: center;
-    font-style: italic;
-    font-family: 'BebasNeue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
-}
-
 .aside_element {
     color: var(--always-black);
     font-size: 4.5vw;
@@ -135,35 +156,60 @@ aside li, nav li span {
     transition: all 0.1s;
     letter-spacing: 10px;
     display: none;
-    transform: /*skewY(80deg)*/ scaleX(.5);
+    transform:
+        /*skewY(80deg)*/
+        scaleX(.5);
 }
 
 .current_aside {
     display: block;
-    transform: /*skewY(10deg)*/ scaleX(1);
+    transform:
+        /*skewY(10deg)*/
+        scaleX(1);
     height: 100%;
     animation: appearing 0.2s ease-out;
     letter-spacing: 4px;
 }
 
+/* ----------------- BOTH ----------------- */
+
+aside li,
+nav li .nav_menu_name {
+    font-weight: 900;
+    /* padding: 0.5vw; */
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    font-family: 'BebasNeue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+}
+
 @keyframes appearings {
     0% {
-        transform: /*skewY(80deg)*/ scaleX(.5);
+        transform:
+            /*skewY(80deg)*/
+            scaleX(.5);
     }
 
     100% {
-        transform: /*skewY(10deg)*/ scaleX(1);
+        transform:
+            /*skewY(10deg)*/
+            scaleX(1);
     }
 }
 
 @keyframes appearing {
     0% {
-        transform: /*skewY(80deg)*/ scaleX(.4);
+        transform:
+            /*skewY(80deg)*/
+            scaleX(.4);
         letter-spacing: 40px;
     }
 
     100% {
-        transform: /*skewY(80deg)*/ scaleX(1);
+        transform:
+            /*skewY(80deg)*/
+            scaleX(1);
         letter-spacing: 4px;
     }
 }

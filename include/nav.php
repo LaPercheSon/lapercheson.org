@@ -52,7 +52,7 @@ function printNav($sections): void
 ?>
         <a href="#<?php echo $sections[0][0] ?>" id="nav_a_<?php echo $sections[0][0] ?>">
             <img src="<?php echo $sections[0][4] ?>" width="40px" height="40px" class="imgMenu" id="nav_img_<?php echo $sections[0][0] ?>">
-            <li class="textMenu" id="nav_<?php echo $sections[0][0] ?>"><span><?php echo $sections[0][1] ?></span></li>
+            <li class="textMenu" id="nav_<?php echo $sections[0][0] ?>"><span class="nav_overline"></span><span class="nav_menu_name"><?php echo $sections[0][1] ?></span><span class="nav_underline"></span></li>
         </a>
     <?php
     }
