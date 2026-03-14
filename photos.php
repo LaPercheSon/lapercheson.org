@@ -2,7 +2,7 @@
 include_once("include/utils.php");
 
 include_once("include/sections_photos.php");
-include_once("include/photos_index.php");
+include_once("include/photos_photos.php");
 
 include_once("include/galery.php");
 include_once("include/nav.php");
@@ -14,10 +14,22 @@ include_once("include/head.php");
     <?php printNav($_SECTIONS) ?>
     <main>
 
-        <?php newSection(); // photos ?>
-        <?php creas2html($_TOURNAGE, "tournage", "IMG");?>
+        <?php
+        printVHeight();
+        newSection(); // photos 
+        ?>
 
-        <?php newSection($end=true); ?>
+        <?php
+        foreach ($_PHOTOS as $year => $photos) {
+            echo "<h2>$year</h2>";
+            creas2html($photos, "tournage", "IMG");
+        }
+        ?>
+
+        <?php
+        newSection($end = true);
+        printVHeight();
+        ?>
     </main>
     <?php printAside($_SECTIONS) ?>
     <script src="scripts/side.js"></script>

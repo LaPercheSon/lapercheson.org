@@ -89,6 +89,10 @@ img, nav a {
     font-style: italic;
 }
 
+a, a:visited {
+    color: var(--whitest);
+}
+
 .underlined {
     text-decoration: underline;
 }

@@ -8,7 +8,6 @@
     <link href="css/common.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/images.css" rel="stylesheet">
     <link href="css/galery.css" rel="stylesheet">
 
     <meta name="author" content="La Perche Son">

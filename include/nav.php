@@ -1,6 +1,7 @@
 <?php
 
 $_CURRENT_SECTION = 0;
+$_FIRST_SECTION = true;
 
 function printSectionsCSS($sections): void
 {
@@ -68,7 +69,7 @@ function printSection(string $id, string $title = ""): void
 
 function newSection(bool $end = false): void
 {
-    global $_CURRENT_SECTION, $_SECTIONS;
+    global $_CURRENT_SECTION, $_FIRST_SECTION, $_SECTIONS;
 
     if ($_CURRENT_SECTION == -1)
         return;
@@ -85,7 +86,9 @@ function newSection(bool $end = false): void
         return;
     }
 
-    if ($_CURRENT_SECTION > 0) {
+    if ($_FIRST_SECTION)
+        $_FIRST_SECTION = false;
+    else {
         // separator
         echo "</section><hr>";
     }

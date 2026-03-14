@@ -3,13 +3,13 @@
     <br>
     <div class="assocmembers">
         <div class="assocprofile">
-            <img src="public/images/head_tintin.jpg" class="assocppic">
+            <img src="images/members/head_tintin.jpg" class="assocppic">
             <h4 class="assocpname">Valentin SERVIERES</h4>
             <h6 class="assocpfunction">Co-Fondateur</h6>
             <h6 class="assocpfunction">Président</h6>
         </div>
         <div class="assocprofile">
-            <img src="public/images/head_kiki.jpg" class="assocppic">
+            <img src="images/members/head_kiki.jpg" class="assocppic">
             <h4 class="assocpname">Killian RENOU</h4>
             <h6 class="assocpfunction">Co-Fondateur</h6>
             <h6 class="assocpfunction">Vice-Président et Trésorier</h6>
@@ -20,7 +20,7 @@
     <h4 class="assoctype">Association déclarée par application de la loi du 1er juillet 1901 et du décret du
         16 août 1901.
     </h4>
-    <a target="_blank" href="public/files/recepisse.pdf" class="assocnblink">
+    <a target="_blank" href="files/recepisse.pdf" class="assocnblink">
         <h4 class="assocnb" title="Cliquez pour télécharger">Association n° W122008893</h4>
     </a>
     <br>

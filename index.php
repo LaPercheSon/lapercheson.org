@@ -38,7 +38,7 @@ include_once("include/head.php");
 
 
         <!-- ABOUT SECTION -->
-        <div id="aboutPopUp" class="popupWin">
+        <article id="aboutPopUp" class="popupWin">
             <div class="blockPage">
                 <h2>À Propos - Mentions légales <a class="closePopup" href="#contact">X</a></h2>
             </div>
@@ -46,7 +46,7 @@ include_once("include/head.php");
                 <?php include("include/statuts.php") ?>
             </section>
 
-        </div>
+        </article>
     </main>
     <?php printAside($_SECTIONS) ?>
     <script src="scripts/side.js"></script>

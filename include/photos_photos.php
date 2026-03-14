@@ -2,55 +2,66 @@
 
 
 
-$_TOURNAGE = [
-    [
-        getStrList("galery/teaserInterception",4),
-        "Teaser Interception",
-        [["YouTube", "https://www.youtube.com/watch?v=LD6vmeCJGw4"]]
+$_PHOTOS = [
+    "2024" => [
+        [
+            getStrList("galery/teaserInterception", 4),
+            "Teaser Interception",
+            [["YouTube", "https://www.youtube.com/watch?v=LD6vmeCJGw4"]]
+        ],
+        [
+            getStrList("galery/intercepStairs", 2),
+            "Parodie de l'escalier d'Escher d'Inception",
+            []
+        ],
     ],
-    [
-        getStrList("galery/intercepStairs",2),
-        "Parodie de l'escalier d'Escher d'Inception",
-        []
+
+    "2023" => [
+        [
+            getStrList("galery/cestPasSorcier", 3),
+            "Parodie C'est Pas Sorcier",
+            []
+        ],
+        [
+            getStrList("galery/plane", 2),
+            "Scène dans un avion",
+            []
+        ],
+        [
+            getStrList("galery/parodieEmissions", 2),
+            "Parodies d'émission télé",
+            []
+        ],
+        [
+            getStrList("galery/spirituCucumis", 4),
+            "1er 48HFP : Spiritu Cucumis",
+            [["YouTube", "https://www.youtube.com/watch?v=ywBxVbaI0AM"]]
+        ],
+        [
+            ["galery/parodieYoutube.jpg"],
+            "Scène bureau",
+            []
+        ],
+        [
+            getStrList("galery/captation", 2),
+            "Captation d'événement",
+            []
+        ],
     ],
-    [
-        getStrList("galery/cestPasSorcier",3),
-        "Parodie C'est Pas Sorcier",
-        []
+
+    "2022" => [
+        [
+            getStrList("galery/enquetedenquetes", 2),
+            "Parodie En Quête d'enquêtes",
+            []
+        ],
     ],
-    [
-        getStrList("galery/plane",2),
-        "EN20 ANS - Scène de l'avion",
-        []
-    ],
-    [
-        ["galery/pilotageDrone.jpg"],
-        "Plans aériens",
-        []
-    ],
-    [
-        getStrList("galery/spirituCucumis",4),
-        "1er 48HFP : Spiritu Cucumis",
-        [["YouTube", "https://www.youtube.com/watch?v=ywBxVbaI0AM"]]
-    ],
-    [
-        getStrList("galery/parodieEmissions",2),
-        "Parodies d'émission télé",
-        []
-    ],
-    [
-        ["galery/parodieYoutube.jpg"],
-        "Scène bureau",
-        []
-    ],
-    [
-        getStrList("galery/enquetedenquetes",2),
-        "Parodie En Quête d'enquêtes",
-        []
-    ],
-    [
-        getStrList("galery/captation",2),
-        "Captation d'événement",
-        []
-    ],
+
+    "2019" => [
+        [
+            ["galery/pilotageDrone.jpg"],
+            "Plans aériens",
+            []
+        ],
+    ]
 ];
