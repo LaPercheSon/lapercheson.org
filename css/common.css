@@ -118,6 +118,10 @@ img {
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* ----------- SCROLLBAR ----------- */
 
 ::-webkit-scrollbar {

@@ -1,7 +1,7 @@
 /* ----- Navigation Menu ----- */
 
 nav {
-    background-color: #bead29;
+    background-color: var(--yellow);
     /* var(--nav-bg); */
 
     overflow: hidden;
@@ -61,10 +61,51 @@ nav ul a img {
     transition: all 0.2s;
 }
 
+aside {
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--yellow);
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+
 .aside_element {
+    height: 0px;
+    width: 100%;
+    list-style: none;
+    transition: all 0.1s;
+    writing-mode: vertical-lr;
+    text-transform: uppercase;
+    color: var(--always-black);
+    font-weight: 900;
+    font-size: 3vw;
     display: none;
+    text-align: center;
+    transform: /*skewY(80deg)*/ scaleX(.5);
+    padding: 0.5vw;
 }
 
 .current_aside {
     display: block;
+    transform: /*skewY(10deg)*/ scaleX(1);
+    height: 100%;
+    animation: appearing 0.2s ease-out;
+}
+
+@keyframes appearing {
+    0% {
+        transform: /*skewY(80deg)*/ scaleX(.5)
+    }
+
+    100% {
+        transform: /*skewY(10deg)*/ scaleX(1);
+    }
 }

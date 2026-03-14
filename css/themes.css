@@ -1,5 +1,9 @@
 /* Dark mode */
 :root {
+    --yellow: #ecba24;
+    /*#da951e*/
+    --yellogo: #cdab51;
+    --always-black: #111;
     --body-bg: #111111;
     --body-color: #eeeeee;
     --nav-bg: #222222;
@@ -34,6 +38,10 @@ nav ul a:hover>.invertOk {
 /* Light mode */
 @media (prefers-color-scheme: light) {
     :root {
+        --yellow: #ecba24;
+        /*#da951e*/
+        --yellogo: #cdab51;
+        --always-black: #111;
         --body-bg: #eeeeee;
         --body-color: #111111;
         --nav-bg: #dddddd;
