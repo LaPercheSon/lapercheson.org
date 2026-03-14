@@ -1,5 +1,10 @@
 <?php
 include_once("include/utils.php");
+
+include_once("include/sections_index.php");
+include_once("include/photos_index.php");
+
+include_once("include/galery.php");
 include_once("include/projects.php");
 include_once("include/nav.php");
 include_once("include/head.php");
@@ -19,12 +24,16 @@ include_once("include/head.php");
         printAllOtherProjectsHTML($_PROJECTS);
 
         newSection(); // photos
-        include("include/galery.php");
+        creas2html($_TOURNAGE, "tournage", "IMG");
+        ?>
+        <a href="./photos">Voir plus</a>
+        <?php
 
         newSection(); // contact
         include("include/contact.php");
 
-        newSection($end=true);
+
+        newSection($end = true);
         ?>
 
 

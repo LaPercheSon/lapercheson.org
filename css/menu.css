@@ -70,10 +70,11 @@ nav ul a li {
 
 nav ul a li .nav_menu_name {
     height: 100%;
-    width: min(90cqw, calc(20vh / 4));
+    width: min(90cqw, calc(20vh / 5));
     font-size: min(90cqw, calc(20vh / 4));
     /* 7chars max ! */
     writing-mode: sideways-lr;
+    transition: all 0.2s;
 }
 
 nav ul {
@@ -122,12 +123,6 @@ nav.press .nav_overline {
     width: 10% !important;
     background-color: var(--always-0) !important;
 }
-
-/* @media screen and ((max-width : 900px) or (orientation:portrait)) {
-    nav ul a li .nav_menu_name {
-        font-size: min(9vw, calc(20vh / 4));
-    }
-} */
 
 /* ----------------- ASIDE ----------------- */
 

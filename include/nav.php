@@ -1,19 +1,5 @@
 <?php
 
-$_SECTIONS = [
-    // [["id","SHORT","Long title", "description", "path/to/icon.svg"], ["/* normal css properties */", "/* hover css properties */", "/* aside css properties */", "/* aside hover css properties */", minHeightVisible(px)]],
-
-    [["top", "Accueil", "La Perche Son", "Qu'est-ce que La Perche Son ?", "images/icons/logo.png"], ["", 0]],
-
-    [["actus", "Actus", "Interception", "Activités actuelles de l'association", "images/icons/blackholelogo.png"], ["", 0]],
-
-    [["projects", "Projets", "Nos créations", "Projets réalisés par nous où auxquels nous avons participé", "images/icons/camera.svg"], ["", 0]],
-
-    [["photos", "Photos", "Photographies", "Photos de nos tournages ou de nos réalisations", "images/icons/photo.svg"], ["", 0]],
-
-    [["contact", "Contact", "Nous contacter", "Comment nous contacter ?", "images/icons/mail.svg"], ["", 0]],
-];
-
 $_CURRENT_SECTION = 0;
 
 function printSectionsCSS($sections): void
@@ -50,7 +36,7 @@ function printNav($sections): void
     echo "<nav><ul>";
     foreach ($sections as $_k => $sections) {
 ?>
-        <a href="#<?php echo $sections[0][0] ?>" id="nav_a_<?php echo $sections[0][0] ?>">
+        <a href="<?php if (isset($sections[0][5])) echo $sections[0][5]; else echo "#".$sections[0][0]; ?>" id="nav_a_<?php echo $sections[0][0] ?>">
             <img src="<?php echo $sections[0][4] ?>" width="40px" height="40px" class="imgMenu" id="nav_img_<?php echo $sections[0][0] ?>">
             <li class="textMenu" id="nav_<?php echo $sections[0][0] ?>"><span class="nav_overline"></span><span class="nav_menu_name"><?php echo $sections[0][1] ?></span><span class="nav_underline"></span></li>
         </a>
@@ -89,6 +75,13 @@ function newSection(bool $end = false): void
     if ($end) {
         print("</section>");
         $_CURRENT_SECTION = -1;
+        return;
+    }
+
+    # if external section, no section to print here, print the next one
+    if (isset($_SECTIONS[$_CURRENT_SECTION][0][5])) {
+        $_CURRENT_SECTION++;
+        newSection($end);
         return;
     }
 
