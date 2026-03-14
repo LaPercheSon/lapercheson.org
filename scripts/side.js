@@ -2,7 +2,6 @@ const sections = document.querySelectorAll("main .main_section");
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        console.log("entering", entry.target.id);
         if (entry.isIntersecting) {
 
             document.querySelectorAll(".aside_element")
@@ -14,7 +13,8 @@ const observer = new IntersectionObserver(entries => {
         }
     });
 }, {
-    threshold: 0.5
+    rootMargin: "-50% 0px -50% 0px",
+    threshold: [0,0.25,0.5,0.75,1]
 });
 
 sections.forEach(section => observer.observe(section));
