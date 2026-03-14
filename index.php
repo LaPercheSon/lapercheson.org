@@ -41,6 +41,7 @@ include_once("include/head.php");
     </main>
     <?php printAside($_SECTIONS) ?>
     <script src="scripts/side.js"></script>
+    <script src="scripts/slidemenu.js"></script>
 </body>
 
 </html>

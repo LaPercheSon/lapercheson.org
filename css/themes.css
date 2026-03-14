@@ -1,6 +1,10 @@
 /* Dark mode */
 :root {
     --yellow: #ecba24;
+    --yellow-t3: #ecba24cc;
+    --yellow-t2: #ecba2488;
+    --yellow-t1: #ecba2433;
+    --yellow-t0: #ecba2411;
     /*#da951e*/
     --yellogo: #cdab51;
     --always-black: #111;
@@ -39,6 +43,10 @@ nav ul a:hover>.invertOk {
 @media (prefers-color-scheme: light) {
     :root {
         --yellow: #ecba24;
+        --yellow-t3: #ecba24cc;
+        --yellow-t2: #ecba2488;
+        --yellow-t1: #ecba2433;
+        --yellow-t0: #ecba2411;
         /*#da951e*/
         --yellogo: #cdab51;
         --always-black: #111;
@@ -69,4 +77,13 @@ nav ul a:hover>.invertOk {
     nav ul a:hover>.invertOk {
         filter: invert(1);
     }
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: 100%;
+    src: url("./BebasNeue-Regular.ttf") format("truetype"),
+        url("./BebasNeue-Regular.otf") format("opentype");
 }

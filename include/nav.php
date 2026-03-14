@@ -23,6 +23,7 @@ function printSectionsCSS($sections): void
         $id = $sections[0][0];
         $css = $sections[1][0];
         $css_hover = $sections[1][1];
+        $css_img = $sections[0][4];
         $css_aside = $sections[1][2];
         $css_aside_hover = $sections[1][3];
         $min_height = $sections[1][4] . "px";
@@ -31,6 +32,13 @@ function printSectionsCSS($sections): void
     nav_$id {
         display: none;
     }
+}
+    
+#nav_a_$id {
+    background: url('$css_img');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
 }");
     }
     print("</style>");
@@ -42,9 +50,9 @@ function printNav($sections): void
     echo "<nav><ul>";
     foreach ($sections as $_k => $sections) {
 ?>
-        <a href="#<?php echo $sections[0][0] ?>">
-            <img src="<?php echo $sections[0][4] ?>" width="40px" height="40px" class="imgMenu">
-            <li class="textMenu"><?php echo $sections[0][1] ?></li>
+        <a href="#<?php echo $sections[0][0] ?>" id="nav_a_<?php echo $sections[0][0] ?>">
+            <img src="<?php echo $sections[0][4] ?>" width="40px" height="40px" class="imgMenu" id="nav_img_<?php echo $sections[0][0] ?>">
+            <li class="textMenu" id="nav_<?php echo $sections[0][0] ?>"><span><?php echo $sections[0][1] ?></span></li>
         </a>
     <?php
     }
