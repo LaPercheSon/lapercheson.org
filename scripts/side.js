@@ -6,10 +6,14 @@ const observer = new IntersectionObserver(entries => {
 
             document.querySelectorAll(".aside_element")
                 .forEach(p => p.classList.remove("current_aside"));
+            document.querySelectorAll(".textMenu")
+                .forEach(p => p.classList.remove("current_nav"));
 
-            const id = "aside_"+entry.target.id//.replace("section", "aside_");
+            const aside_id = "aside_"+entry.target.id//.replace("section", "aside_");
+            const nav_id = "nav_"+entry.target.id//.replace("section", "aside_");
 
-            document.getElementById(id).classList.add("current_aside");
+            document.getElementById(aside_id).classList.add("current_aside");
+            document.getElementById(nav_id).classList.add("current_nav");
         }
     });
 }, {

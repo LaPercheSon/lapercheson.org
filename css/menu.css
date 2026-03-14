@@ -22,7 +22,6 @@ nav ul {
 nav ul a {
     text-decoration: none;
     color: var(--nav-color);
-    transition: all 0.3s;
     display: flex;
     width: 100%;
     height: 20%;
@@ -41,6 +40,22 @@ nav ul a li:hover {
     background: linear-gradient(90deg, var(--yellow-t0), var(--yellow-t2), var(--yellow-t0)), radial-gradient(closest-side, var(--yellow-t0) , var(--yellow-t2) );
 }
 
+nav:active, nav.press  {
+    --yellow: var(--yellow-press);
+    --always-0:var(--pressed-always-0);
+    --always-black:var(--pressed-always-black);
+    --almost-black:var(--pressed-almost-black);
+    --yellow-t0: #0000;
+    --yellow-t1: #0000;
+    --yellow-t2: #0000;
+    --yellow-t3: #0000;
+    /* background-color: var(--yellow-press); */
+}
+
+nav.press a {
+    background: none !important;
+}
+
 nav ul a li {
     width: 100%;
     height: 100%;
@@ -48,11 +63,12 @@ nav ul a li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: var(--almost-black);
 }
 
 nav ul a li span {
     height: 100%;
-    font-size: calc(20vh / 4); /* 7chars max ! */
+    font-size: min(4.5vw, calc(20vh / 4)); /* 7chars max ! */
     writing-mode: sideways-lr;
 }
 
@@ -67,6 +83,21 @@ nav ul a img {
     margin-bottom: 30px;
     margin-left: 10px;
     transition: all 0.2s;
+}
+
+.current_nav {
+    text-decoration: overline var(--always-black);
+    color: var(--always-black);
+}
+
+nav.press .current_nav {
+    text-decoration: none;
+    color: var(--almost-black);
+}
+
+.nav_link_press {
+    text-decoration: overline var(--always-0) !important;
+    color: var(--always-0) !important;
 }
 
 aside {
@@ -86,7 +117,6 @@ aside ul {
 }
 
 aside li, nav li span {
-    color: var(--always-black);
     font-weight: 900;
     /* padding: 0.5vw; */
     list-style: none;
@@ -97,6 +127,7 @@ aside li, nav li span {
 }
 
 .aside_element {
+    color: var(--always-black);
     font-size: 4.5vw;
     width: 100%;
     writing-mode: sideways-rl;
