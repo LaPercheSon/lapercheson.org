@@ -8,6 +8,8 @@
     --yellow-t0: #ecba2411;
     --yellow-press: #2a261a;
     --yellogo: #cdab51;
+    --blackest: #000;
+    --whitest: #fff;
     --always-0: #000;
     --always-black: #111;
     --almost-black: #333;
@@ -34,6 +36,12 @@
     --contactbg: #444444;
     --contactlinkbg: #666666;
     --contactlinkbghover: #6e6e6e;
+    /* galery */
+    --crea-box-shadow: #ecba2411;
+    --crea-lightbox: rgba(0, 0, 0, 0.75);
+    --crea-lightbox-shadow: #95751866;
+    --crea-close-bg: rgba(0, 0, 0, 0.8);
+    --crea-close-shadow: #ecba2444;
 }
 
 .invertOk {
@@ -56,6 +64,8 @@ nav ul a:hover>.invertOk {
         --yellow-t0: #ecba2411;
         --yellow-press: #f0db9d;
         --yellogo: #cdab51;
+        --blackest: #fff;
+        --whitest: #000;
         --always-0: #000;
         --always-black: #111;
         --almost-black: #333;
@@ -80,6 +90,12 @@ nav ul a:hover>.invertOk {
         --contactbg: #bbbbbb;
         --contactlinkbg: #999999;
         --contactlinkbghover: #909090;
+        /* galery */
+        --crea-box-shadow: rgba(0, 0, 0, 0.07);
+        --crea-lightbox: rgba(255, 255, 255, 0.75);
+        --crea-lightbox-shadow: rgba(0, 0, 0, 0.6);
+        --crea-close-bg: rgba(255, 255, 255, 0.8);
+        --crea-close-shadow: rgba(0, 0, 0, 0.4);
     }
 
     .invertOk {
