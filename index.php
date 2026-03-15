@@ -19,24 +19,9 @@ include_once("include/sections/head.php");
     <?php printNav($_SECTIONS) ?>
     <main>
         <?php
-        newSection(true); // home
-        printVHeight();
-        include("include/sections/home.php");
-
-        newSection(); // actus
-        include("include/sections/actus.php");
-
-        newSection(); // projects
-        printAllOtherProjectsHTML($_PROJECTS);
-
-        newSection(); // photos
-        creas2html($_TOURNAGE, "tournage", "IMG");
-        ?>
-        <a href="./photos">Voir plus</a>
-        <?php
-
-        newSection(); // contact
-        include("include/sections/contact.php");
+        foreach ($_SECTIONS as $_ => $section) {
+            include("include/sections/" . $section[0][0] . ".php");
+        }
 
         newSection(true, true); // end
         ?>

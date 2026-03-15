@@ -1,3 +1,5 @@
+<?php newSection(); ?>
+
 <ul class="blockPage" id="listContact">
 
     <li id="aboutContact">
