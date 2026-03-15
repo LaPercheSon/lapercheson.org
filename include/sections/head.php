@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>La Perche Son</title>
+    <title><?php echo $_TITLE ?></title>
     <link href="css/themes.css" rel="stylesheet">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
@@ -11,14 +11,14 @@
     <link href="css/galery.css" rel="stylesheet">
 
     <meta name="author" content="La Perche Son">
-    <meta name="description" content="La Perche Son est un collectif de création audiovisuelle.">
+    <meta name="description" content="<?php echo $_DESCRIPTION ?>">
 
     <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="fr_FR" />
-    <meta property="og:title" content="La Perche Son">
-    <meta property="og:description" content="La Perche Son est un collectif de création audiovisuelle.">
+    <meta property="og:title" content="<?php echo $_TITLE ?>">
+    <meta property="og:description" content="<?php echo $_DESCRIPTION ?>">
 
     <meta property="og:image" content="https://lapercheson.org/images/icons/favicon.png">
     <meta property="og:image:type" content="image/png">

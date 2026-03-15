@@ -1,4 +1,7 @@
 <?php
+$_TITLE = "La Perche Son";
+$_DESCRIPTION = "La Perche Son est un collectif de création audiovisuelle.";
+
 include_once("include/builders/utils.php");
 
 include_once("include/vars/sections_index.php");
@@ -21,6 +24,7 @@ include_once("include/sections/head.php");
         include("include/sections/home.php");
 
         newSection(); // actus
+        include("include/sections/actus.php");
 
         newSection(); // projects
         printAllOtherProjectsHTML($_PROJECTS);

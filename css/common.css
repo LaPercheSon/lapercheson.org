@@ -172,7 +172,7 @@ a:visited {
 }
 
 .main_section {
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 @media screen and ((max-width : 900px) or (orientation:portrait)) {

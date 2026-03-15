@@ -1,4 +1,7 @@
 <?php
+$_TITLE = "Photos - La Perche Son";
+$_DESCRIPTION = "Photos de tournage de La Perche Son.";
+
 include_once("include/builders/utils.php");
 
 include_once("include/vars/sections_photos.php");
