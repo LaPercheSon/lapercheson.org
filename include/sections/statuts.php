@@ -192,7 +192,7 @@
         - lapercheson.org<br>
         - lapercheson.fr<br>
         - lapercheson.com<br>
-        Courriel : Juste à gauche du bouton sur lequel vous avez cliqué<br>
+        Courriel : Juste à droite du bouton sur lequel vous avez cliqué<br>
         Directeur de la publication : M. Valentin SERVIERES<br>
         Responsable de la rédaction : M. Valentin SERVIERES<br>
         <br>
@@ -205,9 +205,9 @@
         <hr><br>
         Hébergeur du site :<br>
         <br>
-        LWS.fr<br>
+        MagicTINTIN<br>
         <br>
-        <a class="linkZone" href="https://www.lws.fr/">www.lws.fr</a><br>
+        <a class="linkZone" href="https://magictintin.fr/">magictintin.fr</a><br>
         <br>
         <hr><br>
         Création d'un lien hypertexte :<br>
