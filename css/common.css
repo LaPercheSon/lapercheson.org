@@ -155,7 +155,8 @@ a:visited {
     animation: scaleX 1s;
 }
 
-.unov_anim:hover::before, .unov_anim:hover::after {
+.unov_anim:hover::before,
+.unov_anim:hover::after {
     transform: scaleX(1.5);
 }
 
@@ -179,9 +180,52 @@ a:visited {
     margin: 0 5vw;
 }
 
+.central_main_button {
+    --size: min(1.7vw, 1.7vh);
+    display: block;
+    width: 40vw;
+    margin: 1vh auto;
+    padding:var(--size);
+    border-radius:var(--size);
+    background-color: var(--yellow);
+    color: var(--always-black) !important;
+    font-size: calc( 2 * var(--size) );
+    font-weight: 900;
+    font-family: 'BebasNeue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.central_main_button:hover {
+    background-color: var(--yellow-press);
+    letter-spacing: 3px;
+    transform: scale(1.05);
+}
+
+.central_main_button:active {
+    background-color: var(--almost-black);
+    color: var(--always-white);
+    transform: scale(1);
+}
+
+.open_link_indicator {
+    transition: all 0.3s;
+}
+
+.central_main_button:hover .open_link_indicator {
+    transform: scale(1.5) translateX(2vw);
+}
+
 @media screen and ((max-width : 900px) or (orientation:portrait)) {
     h1 {
         font-size: 15vw;
+    }
+
+    .central_main_button {
+        --size: min(2vw, 2vh);
+        width: 50vw;
     }
 }
 

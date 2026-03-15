@@ -13,6 +13,7 @@
     --yellow-press: #f0db9d;
     --always-0: #000;
     --always-black: #111;
+    --always-white: #eee;
     --almost-black: #333;
     --pressed-always-0: #000;
     --pressed-always-black: #111;
@@ -73,6 +74,7 @@ nav ul a:hover>.invertOk {
         --yellow-press: #f0db9d;
         --always-0: #000;
         --always-black: #111;
+        --always-black: #eee;
         --almost-black: #333;
         --pressed-always-0: #000;
         --pressed-always-black: #111;
