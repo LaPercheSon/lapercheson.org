@@ -14,9 +14,10 @@ include_once("include/head.php");
 
     <?php printNav($_SECTIONS) ?>
     <main>
-
         <?php
-        newSection(); // home
+        printVHeight();
+        newSection(true); // home
+        include("include/home.php");
 
         newSection(); // actus
 
@@ -32,8 +33,7 @@ include_once("include/head.php");
         newSection(); // contact
         include("include/contact.php");
 
-
-        newSection($end = true);
+        newSection(true, true); // end
         ?>
 
 

@@ -67,7 +67,7 @@ function printSection(string $id, string $title = ""): void
             </div>";
 }
 
-function newSection(bool $end = false): void
+function newSection(bool $no_title = false, bool $end = false): void
 {
     global $_CURRENT_SECTION, $_FIRST_SECTION, $_SECTIONS;
 
@@ -82,7 +82,7 @@ function newSection(bool $end = false): void
     # if external section, no section to print here, print the next one
     if (isset($_SECTIONS[$_CURRENT_SECTION][0][5])) {
         $_CURRENT_SECTION++;
-        newSection($end);
+        newSection($no_title, $end);
         return;
     }
 
@@ -94,7 +94,7 @@ function newSection(bool $end = false): void
     }
     
     if ($_CURRENT_SECTION < sizeof($_SECTIONS)) {
-        printSection($_SECTIONS[$_CURRENT_SECTION][0][0], $_SECTIONS[$_CURRENT_SECTION][0][1]);
+        printSection($_SECTIONS[$_CURRENT_SECTION][0][0], $no_title ? "" : $_SECTIONS[$_CURRENT_SECTION][0][1]);
     } else {
         printSection("unknown_section_" . $_CURRENT_SECTION);
     }

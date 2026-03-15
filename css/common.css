@@ -28,14 +28,14 @@ body {
 /* Titles & text */
 
 h1 {
-    transition: all 1s;
     margin: 0;
-    font-size: 500%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-h1:hover {
-    font-size: 550%;
+    margin-top: max(7vh, 4vw);
+    margin-bottom: 5vh;
+    text-align: center;
+    font-size: 10vw;
+    color: var(--whitest);
+    text-transform: uppercase;
+    font-family: 'BebasNeue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 h2 {
@@ -66,7 +66,8 @@ h6 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-img, nav a {
+img,
+nav a {
     user-drag: none;
     user-select: none;
     -moz-user-select: none;
@@ -89,7 +90,8 @@ img, nav a {
     font-style: italic;
 }
 
-a, a:visited {
+a,
+a:visited {
     color: var(--whitest);
 }
 
@@ -108,19 +110,41 @@ a, a:visited {
     font-style: italic;
 }
 
+.unov_relative {
+    position: relative;
+}
+
+.ovline::before {
+    background-color: var(--body-color);
+    content: '';
+    display: block;
+    height: var(--height-lines);
+    width: 20vw;
+    position: absolute;
+    left: 10vw;
+    top: -1vw;
+    transform-origin: top left;
+}
+
+.unline::after {
+    background-color: var(--body-color);
+    content: '';
+    display: block;
+    position: absolute;
+    right: 10vw;
+    bottom: 0;
+    height: var(--height-lines);
+    width: 20vw;
+    transform-origin: bottom right;
+}
+
 .main_section {
     min-height: 100vh;
 }
 
-@media all and (max-width : 500px) {
-    .titlePage {
-        width: 240px;
-    }
-}
-
-@media all and (max-height : 900px) {
+@media screen and ((max-width : 900px) or (orientation:portrait)) {
     h1 {
-        font-size: 200%;
+        font-size: 15vw;
     }
 }
 

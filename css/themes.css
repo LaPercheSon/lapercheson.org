@@ -42,6 +42,8 @@
     --crea-lightbox-shadow: #95751866;
     --crea-close-bg: rgba(0, 0, 0, 0.8);
     --crea-close-shadow: #ecba2444;
+    /* deco */
+    --height-lines: 10px;
 }
 
 .invertOk {
@@ -114,4 +116,36 @@ nav ul a:hover>.invertOk {
     font-stretch: 100%;
     src: url("./BebasNeue-Regular.ttf") format("truetype"),
         url("./BebasNeue-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Creato";
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: 100%;
+    src: url("./CreatoDisplay-Regular.otf");
+}
+
+@font-face {
+    font-family: "Creato";
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: 100%;
+    src: url("./CreatoDisplay-Bold.otf");
+}
+
+@font-face {
+    font-family: "Creato";
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: 100%;
+    src: url("./CreatoDisplay-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: "Creato";
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: 100%;
+    src: url("./CreatoDisplay-Thin.otf");
 }
