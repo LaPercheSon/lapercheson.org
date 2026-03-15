@@ -13,11 +13,11 @@ include_once("include/head.php");
 
     <?php printNav($_SECTIONS) ?>
     <main>
-        <h1 class="ovline unline unov_relative">Photos de tournage</h1>
+        <h1 class="ovline unline unov_anim unov_relative">Photos de tournage</h1>
 
         <?php
-        printVHeight("5vh");
         newSection(true); // photos 
+        printVHeight("5vh");
         ?>
 
         <?php

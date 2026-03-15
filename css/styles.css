@@ -230,17 +230,6 @@ nav {
     }
 }
 
-/* Photos */
-
-#photos {
-    background-color: var(--body-bg);
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
-
 /* Contact */
 
 #contact {

@@ -15,8 +15,8 @@ include_once("include/head.php");
     <?php printNav($_SECTIONS) ?>
     <main>
         <?php
-        printVHeight();
         newSection(true); // home
+        printVHeight();
         include("include/home.php");
 
         newSection(); // actus

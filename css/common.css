@@ -39,14 +39,21 @@ h1 {
 }
 
 h2 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'BebasNeue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: min(7vw, 7vh);
     margin: 0;
+    padding-top: 2vh;
+    margin-bottom: 1vh;
     text-align: center;
 }
 
 h3 {
+    font-family: 'BebasNeue', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: min(5vw, 5vh);
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1.5vh;
+    margin-bottom: .5vh;
+    text-align: center;
 }
 
 .h3like {
@@ -64,6 +71,12 @@ h6 {
     margin: 0;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+hr {
+    background: linear-gradient(90deg, #0000, var(--button-bg), #0000);
+    height: 2px;
+    border: none;
 }
 
 img,
@@ -124,6 +137,8 @@ a:visited {
     left: 10vw;
     top: -1vw;
     transform-origin: top left;
+    transition: all 0.6s;
+    animation: scaleX 1s;
 }
 
 .unline::after {
@@ -136,6 +151,24 @@ a:visited {
     height: var(--height-lines);
     width: 20vw;
     transform-origin: bottom right;
+    transition: all 0.6s;
+    animation: scaleX 1s;
+}
+
+.unov_anim:hover::before, .unov_anim:hover::after {
+    transform: scaleX(1.5);
+}
+
+@keyframes scaleX {
+    0% {
+        transform:
+            scaleX(0);
+    }
+
+    100% {
+        transform:
+            scaleX(1);
+    }
 }
 
 .main_section {

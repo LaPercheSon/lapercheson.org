@@ -62,9 +62,9 @@ function printSection(string $id, string $title = ""): void
 {
     echo "<!-- " . strtoupper($id) . " SECTION -->\n<section class='main_section' id='$id'>";
     if (strlen($title) > 0)
-        echo "<div class='titlePage blockPage' id='title_$id'>
-                <h2>$title</h2>
-            </div>";
+        // echo "<div class='titlePage blockPage' id='title_$id'>";
+        echo "<h2>$title</h2>";
+        // echo "</div>";
 }
 
 function newSection(bool $no_title = false, bool $end = false): void
