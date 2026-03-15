@@ -9,6 +9,7 @@
     <link href="css/menu.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/galery.css" rel="stylesheet">
+    <link href="css/actus.css" rel="stylesheet">
     <link href="css/projects.css" rel="stylesheet">
     <link href="css/contact.css" rel="stylesheet">
     <link href="css/about.css" rel="stylesheet">

@@ -1,23 +1,27 @@
 <article id="interceptionArticle" class="actus_article">
     <div class="actus_article_col">
         <div class="actus_article_description">
-            <p>
-            <h3>Présentation du projet</h3>
-            <span class="boldi">Interception</span> est le premier projet de long-métrage de <strong>La Perche
-            Son</strong>.<br>
-            <br>
-            Ce long métrage mélangera les concepts de 5 films réalisés par Christopher Nolan dans un
-            scénario unique et original.<br>
-            Les films parodiés sont Memento, Le Prestige, Inception, Interstellar et Tenet.<br>
-            </p>
-            <p>
-            <h3>Avancée du projet</h3>
-            Le film en cours de conception :<br>
-            - Écriture : V1.4 (oui c'est précis) terminée<br>
-            - Pré-production : Finie<br>
-            - Tournage: Fini (à quelques reshoot près)<br>
-            - Post-production: En cours... (2To de rushs)<br>
-            </p>
+            <div>
+                <h3>Présentation du projet</h3>
+                <p>
+                    <strong>Interception</strong> est le premier projet de long-métrage de <strong>La Perche Son</strong>.<br>
+                    <br>
+                    Ce long métrage mélangera les concepts de 5 films réalisés par Christopher Nolan dans un
+                    scénario unique et original.<br>
+                    Les films parodiés sont Memento, Le Prestige, Inception, Interstellar et Tenet.<br>
+                </p>
+            </div>
+            <div>
+                <h3>Avancée du projet</h3>
+                <p>
+                    Le film en cours de conception :<br>
+                    - Écriture : V1.4 (oui c'est précis) terminée<br>
+                    - Pré-production : Finie<br>
+                    - Tournage: Fini (à quelques reshoot près)<br>
+                    - Post-production: En cours... (2To de rushs)<br>
+                </p>
+            </div>
+
         </div>
     </div>
     <div class="actus_article_col">
@@ -26,6 +30,6 @@
     </div>
     <div class="actus_article_col">
         <img class="actus_article_illustration" loading="lazy" src="images/galery/rush_interception.jpg">
-        <img class="actus_article_illustration" loading="lazy" src="images/galery/teaserInterception1.jpg">
+        <img class="actus_article_illustration" loading="lazy" src="images/galery/vaisseau4.jpg">
     </div>
 </article>
