@@ -1,13 +1,14 @@
 <?php
-include_once("include/utils.php");
+include_once("include/builders/utils.php");
 
-include_once("include/sections_index.php");
-include_once("include/photos_index.php");
+include_once("include/vars/sections_index.php");
+include_once("include/vars/photos_index.php");
+include_once("include/vars/projects.php");
 
-include_once("include/galery.php");
-include_once("include/projects.php");
-include_once("include/nav.php");
-include_once("include/head.php");
+include_once("include/builders/galery.php");
+include_once("include/builders/projects.php");
+include_once("include/builders/nav.php");
+include_once("include/sections/head.php");
 ?>
 
 <body>
@@ -17,7 +18,7 @@ include_once("include/head.php");
         <?php
         newSection(true); // home
         printVHeight();
-        include("include/home.php");
+        include("include/sections/home.php");
 
         newSection(); // actus
 
@@ -31,7 +32,7 @@ include_once("include/head.php");
         <?php
 
         newSection(); // contact
-        include("include/contact.php");
+        include("include/sections/contact.php");
 
         newSection(true, true); // end
         ?>
@@ -43,7 +44,7 @@ include_once("include/head.php");
                 <h2>À Propos - Mentions légales <a class="closePopup" href="#contact">X</a></h2>
             </div>
             <section class="popupBlock blockPage">
-                <?php include("include/statuts.php") ?>
+                <?php include("include/sections/statuts.php") ?>
             </section>
 
         </article>

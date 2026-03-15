@@ -6,16 +6,18 @@
     --yellow-t2: #ecba2488;
     --yellow-t1: #ecba2433;
     --yellow-t0: #ecba2411;
-    --yellow-press: #2a261a;
     --yellogo: #cdab51;
     --blackest: #000;
     --whitest: #fff;
+    /* menu */
+    --yellow-press: #f0db9d;
     --always-0: #000;
     --always-black: #111;
     --almost-black: #333;
-    --pressed-always-0: #fff;
-    --pressed-always-black: #eee;
-    --pressed-almost-black: #999;
+    --pressed-always-0: #000;
+    --pressed-always-black: #111;
+    --pressed-almost-black: #666;
+    /* main */
     --body-bg: #111111;
     --body-color: #eeeeee;
     --nav-bg: #222222;
@@ -64,16 +66,18 @@ nav ul a:hover>.invertOk {
         --yellow-t2: #ecba2488;
         --yellow-t1: #ecba2433;
         --yellow-t0: #ecba2411;
-        --yellow-press: #f0db9d;
         --yellogo: #cdab51;
         --blackest: #fff;
         --whitest: #000;
+        /* menu */
+        --yellow-press: #f0db9d;
         --always-0: #000;
         --always-black: #111;
         --almost-black: #333;
         --pressed-always-0: #000;
         --pressed-always-black: #111;
         --pressed-almost-black: #666;
+        /* main */
         --body-bg: #eeeeee;
         --body-color: #111111;
         --nav-bg: #dddddd;

@@ -1,12 +1,12 @@
 <?php
-include_once("include/utils.php");
+include_once("include/builders/utils.php");
 
-include_once("include/sections_photos.php");
-include_once("include/photos_photos.php");
+include_once("include/vars/sections_photos.php");
+include_once("include/vars/photos_photos.php");
 
-include_once("include/galery.php");
-include_once("include/nav.php");
-include_once("include/head.php");
+include_once("include/builders/galery.php");
+include_once("include/builders/nav.php");
+include_once("include/sections/head.php");
 ?>
 
 <body>
