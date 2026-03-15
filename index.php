@@ -3,14 +3,14 @@ $_TITLE = "La Perche Son";
 $_DESCRIPTION = "La Perche Son est un collectif de création audiovisuelle.";
 
 include_once("include/builders/utils.php");
+include_once("include/builders/galery.php");
+include_once("include/builders/projects.php");
+include_once("include/builders/nav.php");
 
 include_once("include/vars/sections_index.php");
 include_once("include/vars/photos_index.php");
 include_once("include/vars/projects.php");
 
-include_once("include/builders/galery.php");
-include_once("include/builders/projects.php");
-include_once("include/builders/nav.php");
 include_once("include/sections/head.php");
 ?>
 

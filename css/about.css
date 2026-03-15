@@ -1,0 +1,139 @@
+/* Pop up About */
+
+.popupWin {
+
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--block-bg);
+    z-index: 666;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupBlock {
+    position: relative;
+    bottom: -100vw;
+    background-color: var(--block-bg-f);
+    transition: all 0.3s ease-in-out;
+    width: 70%;
+    height: 70%;
+    max-width: 70%;
+    max-height: 70%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+
+.popupWin:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popupWin:target .popupBlock {
+    bottom: 0;
+    right: 0;
+    /*transform: translateX();*/
+}
+
+.closePopup {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 300;
+    border-radius: 20%;
+    background-color: var(--body-color);
+    z-index: 690;
+    color: var(--body-bg);
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.assoctype {
+    color: var(--subtitle);
+    font-weight: 400;
+}
+
+.assocnb {
+    font-weight: 800;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.assocnb:hover {
+    text-decoration: underline dotted;
+}
+
+.assocnblink,
+.assocnblink:hover,
+.assocnblink:visited,
+.assocnblink:active {
+    text-decoration: none;
+    color: var(--body-color);
+}
+
+.assocmembers {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.assocprofile {
+    width: 30%;
+    background-color: var(--contactlinkbg);
+    border-radius: min(5vh, 5vw);
+    padding: min(1vh, 1vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: min(1vh, 1vw);
+    box-sizing: border-box;
+    transition: all .5s;
+}
+
+.assocprofile:hover {
+    background-color: var(--contactbg);
+}
+
+.assocprofile:hover .assocppic {
+    box-shadow: 0 0 min(1vh, 1vw) var(--body-color)
+}
+
+.assocppic {
+    border-radius: 50%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: min(1vh, 1vw);
+    transition: all 0.3s;
+}
+
+.aboutHr {
+    margin-top: min(5vh, 5vw);
+    margin-bottom: min(5vh, 5vw);
+}
+
+@media all and (max-width : 1260px) {
+    .assocprofile {
+        width: 70%;
+        margin: auto;
+        margin-top: min(1vh, 1vw);
+        margin-bottom: min(1vh, 1vw);
+    }
+
+    .assocmembers {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

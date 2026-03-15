@@ -1,0 +1,93 @@
+/* Contact */
+
+#contact {
+    background-color: var(--body-bg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#titleContact {
+    height: 28px;
+}
+
+#listContact {
+    width: 80%;
+    height: 500px;
+    list-style-type: none;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    overflow-y: auto;
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+
+#listContact::-webkit-scrollbar {
+    /* Chromium */
+    display: none;
+}
+
+@media all and (max-width : 1260px) {
+    #listContact {
+        width: auto;
+        display: block;
+        height: 80%;
+    }
+}
+
+
+#listContact li {
+    background-color: var(--contactbg);
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: var(--body-color) 2px solid;
+}
+
+#listContact li a {
+    width: 280px;
+    height: 280px;
+    transition: all 0.5s;
+    background-color: var(--contactlinkbg);
+    border-radius: 150px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+#listContact li:hover a {
+    background-color: var(--contactlinkbghover);
+    border-radius: 75px;
+}
+
+#listContact li a img {
+    width: 250px;
+    height: 250px;
+    transition: all 0.5;
+}
+
+#listContact li hr {
+    background-color: var(--body-color);
+    height: 1px;
+    width: 40%;
+}

@@ -9,6 +9,9 @@
     <link href="css/menu.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/galery.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
 
     <meta name="author" content="La Perche Son">
     <meta name="description" content="<?php echo $_DESCRIPTION ?>">

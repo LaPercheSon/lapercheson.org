@@ -1,0 +1,125 @@
+/* Other Projects */
+
+#projects {
+    background-color: var(--body-bg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#listOtherProjects {
+    height: 80%;
+    width: 90%;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: auto;
+    border-radius: 10px;
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+
+#listOtherProjects::-webkit-scrollbar {
+    /* Chromium */
+    display: none;
+}
+
+.otherProjectItem {
+    transition: all 0.5s;
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.otherProjectItem:hover {
+    width: 97%;
+}
+
+.otherProjectItem a {
+    width: 40%;
+    text-decoration: none;
+
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.otherProjectItem:hover h2 {
+    opacity: 1;
+}
+
+.otherImageItem {
+    width: 100%;
+    height: 280px;
+    background-color: var(--otherblenditem);
+    background-blend-mode: hue;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.otherImageItem h2 {
+    color: var(--body-color);
+    opacity: 0;
+    font-family: 'Creato', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: x-large;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.otherImageItem:hover h2 {
+    transform: scale(120%);
+}
+
+.otherImageItem:hover {
+    background-color: var(--otherblenditemhover);
+
+}
+
+
+.otherDescriptionItem {
+    width: 50%;
+    display: block;
+
+}
+
+.otherDescriptionItem p {
+    max-height: 200px;
+    overflow: auto;
+}
+
+
+@media all and (max-width : 550px) {
+    .otherDescriptionItem {
+        display: none;
+    }
+
+    .otherProjectItem a {
+        width: 90%;
+    }
+}

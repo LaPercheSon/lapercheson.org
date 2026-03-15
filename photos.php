@@ -3,12 +3,12 @@ $_TITLE = "Photos - La Perche Son";
 $_DESCRIPTION = "Photos de tournage de La Perche Son.";
 
 include_once("include/builders/utils.php");
+include_once("include/builders/galery.php");
+include_once("include/builders/nav.php");
 
 include_once("include/vars/sections_photos.php");
 include_once("include/vars/photos_photos.php");
 
-include_once("include/builders/galery.php");
-include_once("include/builders/nav.php");
 include_once("include/sections/head.php");
 ?>
 
