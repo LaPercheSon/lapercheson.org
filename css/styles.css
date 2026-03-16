@@ -39,6 +39,13 @@ nav {
     }
 }
 
+#main_logo {
+    display: block;
+    width: min(30vw, 30vh);
+    height: min(30vw, 30vh);
+    margin: 5vh auto;
+}
+
 
 /* Animations */
 

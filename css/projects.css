@@ -108,18 +108,48 @@
 
 }
 
-.otherDescriptionItem p {
+/* .otherDescriptionItem p {
     max-height: 200px;
     overflow: auto;
-}
+} */
 
 
 @media all and (max-width : 550px) {
     .otherDescriptionItem {
         display: none;
     }
+}
 
-    .otherProjectItem a {
+
+
+@media screen and ((max-width : 900px) or (orientation:portrait)) {
+
+    .otherProjectItem a,
+    .otherProjectItem article {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .otherProjectItem a, .otherProjectItem a aside {
+        height: 45vw;
+    }
+
+    .otherDescriptionItem {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .otherProjectItem {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-color: var(--blackest);
+        border-radius: 10px;
         width: 90%;
+    }
+
+    .otherProjectItem:hover {
+        width: 92%;
     }
 }
