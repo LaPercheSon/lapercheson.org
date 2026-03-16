@@ -2,8 +2,38 @@
 
 
 $_TOURNAGE = [
+        [
+            getStrList("galery/gala1_", 5),
+            "Trailer Gala de l'ENIT",
+            [["Youtube","https://www.youtube.com/watch?v=gv8eOFS0kCI"]]
+        ],
+        [
+            ["galery/galabaleine.jpg"],
+            "La baleine (Trailer Gala)",
+            []
+        ],
+        [
+            getStrList("galery/gala2_", 3),
+            "Trailer Gala de l'ENIT",
+            []
+        ],
     [
-        getStrList("galery/teaserInterception",4),
+        ["galery/liveclubinfo1.jpg","galery/liveclubinfo3.jpg","galery/igs3.jpg"],
+        "Stream IGS",
+        [["Connaissez-vous l'IGS ?", "https://igs.insat.fr"]]
+    ],
+        [
+            getStrList("galery/forestraynal", 1),
+            "Parodie de Forest Gump",
+            []
+        ],
+    [
+        ["galery/intercepCar2.jpg","galery/vaisseau7.jpg"],
+        "Tournage Interception",
+        []
+    ],
+    [
+        ["galery/teaserInterception1.jpg","galery/teaserInterception3.jpg","galery/teaserInterception4.jpg"],
         "Teaser Interception",
         [["YouTube", "https://www.youtube.com/watch?v=LD6vmeCJGw4"]]
     ],
@@ -13,7 +43,7 @@ $_TOURNAGE = [
         []
     ],
     [
-        getStrList("galery/cestPasSorcier",3),
+        getStrList("galery/cestPasSorcier",2),
         "Parodie C'est Pas Sorcier",
         []
     ],
@@ -23,33 +53,8 @@ $_TOURNAGE = [
         []
     ],
     [
-        ["galery/pilotageDrone.jpg"],
-        "Plans aériens",
-        []
-    ],
-    [
-        getStrList("galery/spirituCucumis",4),
+        ["galery/spirituCucumis1.jpg","galery/spirituCucumis4.jpg"],
         "1er 48HFP : Spiritu Cucumis",
         [["YouTube", "https://www.youtube.com/watch?v=ywBxVbaI0AM"]]
-    ],
-    [
-        getStrList("galery/parodieEmissions",2),
-        "Parodies d'émission télé",
-        []
-    ],
-    [
-        ["galery/parodieYoutube.jpg"],
-        "Scène bureau",
-        []
-    ],
-    [
-        getStrList("galery/enquetedenquetes",2),
-        "Parodie En Quête d'enquêtes",
-        []
-    ],
-    [
-        getStrList("galery/captation",2),
-        "Captation d'événement",
-        []
-    ],
+    ]
 ];
