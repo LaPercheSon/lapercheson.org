@@ -26,7 +26,7 @@ include_once("include/sections/head.php");
         <?php
         foreach ($_PHOTOS as $year => $photos) {
             echo "<h2>$year</h2>";
-            creas2html($photos, "tournage", "IMG");
+            creas2html($photos, "tournage_$year", "IMG");
         }
         ?>
 
